@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jake Koten's Films</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="keywords" content="Jake Koten, Films, Video Gallery, Film Gallery, YouTube, Vimeo," />
+		<meta name="description" content="Jake Koten's College Videos" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+		<!--script src="js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+    <link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+<div id="main">
+<ul id="menu">
+				<li><a href="index.html">home</a></li>
+				<li><a href="aboutme.html" id="about">About me</a></li>
+				<li><a href="/blog" id="contact">Blog</a></li>
+                <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+				<li class="active"><a href="films.html" id="film">Films</a></li>
+				<li><a href="future.html" id="future">Future</a></li>
+				<li><a href="project.html" id="projects">Projects</a></li>
+                <li> <a href="websites.html" id="websites">Websites</a></li>
+			</ul>
+        <div align="center">
+			<div class="fleft">
+		  </div>
+			<div class="fleft">
+				<ul class="gallery clearfix">
+			</div>
+			<div class="fleft">
+				<ul class="gallery clearfix">
+				</ul>
+                <p><h2><b>Professional Samples</b></h2></p>
+				<ul class="gallery clearfix">
+					<li><a href="http://vimeo.com/13686842&amp;width=640" rel="prettyPhoto" title="Asurion Tutorial Video"><img src="data/thumbnails/7.png" alt="Asurion Tutorial Video Preview" width="230"></a></li>
+                <li><a href="http://vimeo.com/13561020&amp;width=640" rel="prettyPhoto" title="Jared Catha Wedding Video"><img src="data/thumbnails/8.png" alt="Jared Catha Wedding Video" width="230"></a></li>
+                <li><a href="http://vimeo.com/7317731&amp;width=640" rel="prettyPhoto" title="Project Code Rush Intro"><img src="data/thumbnails/6.png" alt="Project Code Rush Intro" width="230"></a></li>
+				</ul>
+	
+      <p><h2><b>College Films</b></h2></p>
+      			<div class="fleft">
+      <ul class="gallery clearfix">
+					<li><a href="http://vimeo.com/13683033&amp;width=640" rel="prettyPhoto" title="For Alina"><img src="data/thumbnails/0.png" alt="For Alina Film" width="230"></a></li>
+                <li><a href="http://vimeo.com/13682754" rel="prettyPhoto" title="Alina For Jake"><img src="data/thumbnails/1.png" alt="Alina For Jake Film" width="230"></a></li>
+                <li><a href="http://vimeo.com/13663448&amp;width=640" rel="prettyPhoto" title="Denton's Death"><img src="data/thumbnails/2.png" alt="Denton's Death Film" width="230"></a></li>
+				</ul>
+                </div>
+			</div>
+			<br class="cboth" />
+	
+			<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$("area[rel^='prettyPhoto']").prettyPhoto();
+				
+				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'facebook',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+		
+				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+					changepicturecallback: function(){ initialize(); }
+				});
+
+				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+					changepicturecallback: function(){ _bsap.exec(); }
+				});
+			});
+			</script>
+	
+			
+	
+				</div>
+	</body>
+</html>

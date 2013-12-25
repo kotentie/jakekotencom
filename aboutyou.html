@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<title>Making predictions using JavaScript</title>
+	<script typt="text/javascript" src="script.js">
+	</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="main">
+<ul id="menu">
+<li><a href="index.html">home</a></li>
+				<li><a href="aboutme.html" id="about">About me</a></li>
+                <li class="active"><a href="aboutyou.html" id="aboutyou">About you</a></li>
+	<li><a href="/blog" id="contact">Blog</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+				<li><a href="films.html" id="film">Films</a></li>
+				<li><a href="future.html" id="future">Future</a></li>
+				<li><a href="project.html" id="projects">Projects</a></li>
+                <li> <a href="websites.html" id="websites">Websites</a></li>
+			</ul>
+<center>
+<script type="text/javascript">
+	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Windows"){
+	document.write('<p><img src="images/win_firefox.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Windows"){
+	document.write('<p><img src="images/win_opera.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Windows"){
+	document.write('<p><img src="images/win_chrome.png"/> </p>');
+}
+if (BrowserDetect.browser == "Explorer"&& BrowserDetect.OS == "Windows"){
+	document.write('<p><img src="images/win_ie.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Mac"){
+	document.write('<p><img src="images/mac_firefox.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Mac"){
+	document.write('<p><img src="images/mac_opera.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Mac"){
+	document.write('<p><img src="images/mac_chrome.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Safari"&& BrowserDetect.OS == "Mac"){
+	document.write('<p><img src="images/mac_safari.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Linux"){
+	document.write('<p><img src="images/linux_firefox.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Linux"){
+	document.write('<p><img src="images/linux_opera.png"/> </p>');
+}
+	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Linux"){
+	document.write('<p><img src="images/linux_chrome.png"/> </p>');
+}
+</script>
+</center>
+</div>	
+</body>
+</html>

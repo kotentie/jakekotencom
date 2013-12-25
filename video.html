@@ -1,0 +1,78 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- A minimal Flowplayer setup to get you started -->
+  
+
+	<!-- 
+		include flowplayer JavaScript file that does  
+		Flash embedding and provides the Flowplayer API.
+	-->
+	<script type="text/javascript" src="http://jakekoten.com/flow/flowplayer-3.2.4.min.js"></script>
+	
+	
+	<!-- page title -->
+	<title>Basic Flowplayer setup</title>
+
+</head><body>
+
+	<div id="page">
+		
+		<h1>&nbsp;</h1>
+		
+		<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+		<a  
+			 href="http://jakekoten.com/flow/hd_720.mp4"  
+			 style="display:block;width:720px;height:480px"  
+			 id="player"> 
+		</a> 
+	<div class="box info" id="info">
+	Your speed appears here.
+</div>
+		<!-- this will install flowplayer inside previous A- tag. -->
+	  <script>
+			flowplayer("player", "http://jakekoten.com/flow/flowplayer-3.2.4.swf", {
+  clip: {
+    // the bitrates, video width and file names for this clip
+    bitrates: [
+      { url: "http://jakekoten.com/flow/hd_480.mp4", width: 480, bitrate: 626 },
+	  { url: "http://jakekoten.com/flow/hd_640.mp4", width: 640, bitrate: 1480 },
+      { url: "http://jakekoten.com/flow/hd_720.mp4", width: 720, bitrate: 2436 }
+      
+    ],
+    urlResolvers: 'bwcheck',
+    baseUrl: 'http://jakekoten.com/flow/'
+  },
+  plugins:  {
+    
+    // bandwidth check plugin
+    bwcheck: {  
+       url: 'http://jakekoten.com/flow/flowplayer.bwcheck-3.2.2.swf',
+       
+       // this is the reference file that is download and used to calculate the bandwidth   
+       netConnectionUrl: 'http://jakekoten.com/flow/flowplayer-3.2.4.swf',
+
+       // this method is called when the bandwidth check is done
+       onBwDone: function(info, bitrate) {
+           var el = document.getElementById("info");
+           el.innerHTML = "Your speed is: " +bitrate+ "<br />Video file: hd" + 
+           info.bitrate + ".mp4<br/>" +
+           "Video width: " + info.width;
+       }
+
+    }
+  }
+});
+		</script>
+	
+		
+		
+		<!-- 
+			after this line is purely informational stuff. 
+			does not affect on Flowplayer functionality 
+		-->
+
+		<p>&nbsp;</p>
+</div>
+	
+	
+</body></html>
