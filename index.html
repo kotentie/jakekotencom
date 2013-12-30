@@ -4,7 +4,7 @@
 	<title>JakeKoten.com</title>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" rev="stylesheet" href="styles.css" />
-<script type="text/javascript">
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-8550088-5']);
@@ -16,27 +16,45 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+  </script>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-<div id="main">
-<h1 align="center"> Jake Koten's Website</h1>
-<ul id="menu">
-<li class="active"><a href="index.html">home</a></li>
-				<li><a href="aboutme.html" id="about">About me</a></li>
-                <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
-		<li><a href="/blog" id="websites">Blog</a></li>
-                <li><a href="contact.html" id="contact">Contact</a></li>
-				<li><a href="films.html" id="film">Films</a></li>
-				<li><a href="future.html" id="future">Future</a></li>
-				<li><a href="project.html" id="projects">Projects</a></li>
-                <li> <a href="websites.html" id="websites">Websites</a></li>
-			</ul>
-      <img src="whitefiller.png" width="200" height="100" alt="filler" /><img src="images/intro.gif" alt="arrow" align="middle" id="aboutImg" />
-<p>&nbsp;</p>
-<p align="center">*the above animations may only be hilarious. If the condition persists please consult me.<p>
-          <p>&nbsp;</p>
-</div>
-     	</body>
-</html>
+  <div id="main" class="container">
+    <h1 align="center"> Jake Koten's Website</h1>
+        <nav role="navigation" class="navbar navbar-default">
+      <ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html" id="about">About me</a></li>
+        <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+        <li><a href="/blog" id="websites">Blog</a></li>
+        <li><a href="contact.html" id="contact">Contact</a></li>
+        <li><a href="films.html" id="film">Films</a></li>
+        <li><a href="future.html" id="future">Future</a></li>
+        <li><a href="project.html" id="projects">Projects</a></li>
+        <li><a href="websites.html" id="websites">Websites</a></li>
+      </ul>
+
+      
+      <ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html" id="about">About me</a></li>
+        <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+        <li><a href="/blog" id="websites">Blog</a></li>
+        <li><a href="contact.html" id="contact">Contact</a></li>
+        <li><a href="films.html" id="film">Films</a></li>
+        <li><a href="future.html" id="future">Future</a></li>
+        <li><a href="project.html" id="projects">Projects</a></li>
+        <li><a href="websites.html" id="websites">Websites</a></li>
+      </ul>
+      
+    </nav>
+    
+   <img src="images/intro.gif" alt="arrow" id="aboutImg" class="img-responsive hidden-xs hidden-sm hidden-md" alt="Responsive image"/>
+    <p align="center" class="hidden-xs hidden-sm hidden-md">*the above animations may only be hilarious. If the condition persists please consult your doctor.<p>
+      <p>&nbsp;</p>
+    </div>
+  </body>
+  </html>

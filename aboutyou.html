@@ -5,24 +5,42 @@
 <title>Making predictions using JavaScript</title>
 	<script typt="text/javascript" src="script.js">
 	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-<div id="main">
-<ul id="menu">
-<li><a href="index.html">home</a></li>
-				<li><a href="aboutme.html" id="about">About me</a></li>
-                <li class="active"><a href="aboutyou.html" id="aboutyou">About you</a></li>
-	<li><a href="/blog" id="contact">Blog</a></li>
-                <li><a href="contact.html" id="contact">Contact</a></li>
-				<li><a href="films.html" id="film">Films</a></li>
-				<li><a href="future.html" id="future">Future</a></li>
-				<li><a href="project.html" id="projects">Projects</a></li>
-                <li> <a href="websites.html" id="websites">Websites</a></li>
-			</ul>
-<center>
+<div id="main" class="container">
+    <h1 align="center"> Jake Koten's Website</h1>
+      <nav role="navigation" class="navbar navbar-default">
+         <ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html" id="about">About me</a></li>
+          <li class="active"><a href="aboutyou.html" id="aboutyou">About you</a></li>
+          <li><a href="/blog" id="websites">Blog</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
+          <li><a href="films.html" id="film">Films</a></li>
+          <li><a href="future.html" id="future">Future</a></li>
+          <li><a href="project.html" id="projects">Projects</a></li>
+          <li><a href="websites.html" id="websites">Websites</a></li>
+      </ul>
+
+    
+      <ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html" id="about">About me</a></li>
+          <li class="active" ><a href="aboutyou.html" id="aboutyou">About you</a></li>
+          <li><a href="/blog" id="websites">Blog</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
+          <li><a href="films.html" id="film">Films</a></li>
+          <li><a href="future.html" id="future">Future</a></li>
+          <li><a href="project.html" id="projects">Projects</a></li>
+          <li><a href="websites.html" id="websites">Websites</a></li>
+      </ul>
+     </nav>
+<center id="go-here">
 <script type="text/javascript">
 	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Windows"){
 	document.write('<p><img src="images/win_firefox.png"/> </p>');
@@ -57,8 +75,19 @@ if (BrowserDetect.browser == "Explorer"&& BrowserDetect.OS == "Windows"){
 	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Linux"){
 	document.write('<p><img src="images/linux_chrome.png"/> </p>');
 }
+	if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)|| navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)|| navigator.userAgent.match(/iPod/i)|| navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i))
+	{
+		document.write('<p><img src="images/else.png" class="img-responsive"/> </p>');
+	}
 </script>
+  
 </center>
 </div>	
 </body>
+    <script>
+      $(window).load(function() {
+        var theHash = "#go-here";
+        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
+      });
+    </script>
 </html>

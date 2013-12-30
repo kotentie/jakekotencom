@@ -2,31 +2,55 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-<title>The Future of Jake Koten</title>
+	<title>The Future of Jake Koten</title>
 	<script typt="text/javascript" src="script.js">
 	</script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<div id="main">
-<div align="center">
-<ul id="menu">
-				<li><a href="index.html">home</a></li>
+	<div id="main" class="container">
+		<h1 align="center"> Jake Koten's Website</h1>
+		<nav role="navigation" class="navbar navbar-default">
+			<ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
+				<li><a href="index.html">Home</a></li>
 				<li><a href="aboutme.html" id="about">About me</a></li>
-                <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
-<li><a href="/blog" id="contact">Blog</a></li>
-                <li><a href="contact.html" id="contact">Contact</a></li>
+				<li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+				<li><a href="/blog" id="websites">Blog</a></li>
+				<li><a href="contact.html" id="contact">Contact</a></li>
 				<li><a href="films.html" id="film">Films</a></li>
 				<li class="active"><a href="future.html" id="future">Future</a></li>
 				<li><a href="project.html" id="projects">Projects</a></li>
-                <li> <a href="websites.html" id="websites">Websites</a></li>
+				<li><a href="websites.html" id="websites">Websites</a></li>
 			</ul>
 
-<p>&nbsp;</p>
-<img src="images/under_construction.png" height = 500/>
-<p>&nbsp;</p>
-</div>
-</div>	
+			
+			<ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutme.html" id="about">About me</a></li>
+				<li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+				<li><a href="/blog" id="websites">Blog</a></li>
+				<li><a href="contact.html" id="contact">Contact</a></li>
+				<li><a href="films.html" id="film">Films</a></li>
+				<li class="active"><a href="future.html" id="future">Future</a></li>
+				<li><a href="project.html" id="projects">Projects</a></li>
+				<li><a href="websites.html" id="websites">Websites</a></li>
+			</ul>
+		</nav>
+		<div align="center">
+			<p>&nbsp;</p>
+			<img src="images/under_construction.png" class="img-responsive" id="go-here"/>
+			<p>&nbsp;</p>
+		</div>
+	</div>	
 </body>
+ <script>
+      $(window).load(function() {
+        var theHash = "#go-here";
+        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
+      });
+    </script>
 </html>
