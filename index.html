@@ -4,19 +4,9 @@
 	<title>JakeKoten.com</title>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" rev="stylesheet" href="styles.css" />
-  <script type="text/javascript">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-8550088-5']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
+ 
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -51,10 +41,31 @@
       </ul>
       
     </nav>
-    
-   <img src="images/intro.gif" alt="arrow" id="aboutImg" class="img-responsive hidden-xs hidden-sm hidden-md" alt="Responsive image"/>
+    <div id="go-here">
+   <img src="images/intro.gif" alt="arrow" id="aboutImg" class="img-responsive" alt="Responsive image"/>
     <p align="center" class="hidden-xs hidden-sm hidden-md">*the above animations may only be hilarious. If the condition persists please consult your doctor.<p>
       <p>&nbsp;</p>
     </div>
+    <footer class="panel-footer">wow</footer>  
+    </div>
   </body>
+   <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8550088-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+   <script>
+      $(window).load(function() {
+        var theHash = "#go-here";
+        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
+      });
+    </script>
   </html>

@@ -1,12 +1,24 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+  background: #f8f8f8;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
 
 ul li { display: inline; }
 
+#main nav {
+  border-color: #f8f8f8;
+  border-radius: 0px;
+}
+
 #menu.nav-pills a{
     height: 110px;
-    font-size: 46px;
+    font-size: 36px;
 
 }
 
