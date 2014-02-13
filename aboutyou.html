@@ -3,21 +3,21 @@
 <html lang="en">
 <head>
 <title>Making predictions using JavaScript</title>
-	<script typt="text/javascript" src="script.js">
+	<script typt="text/javascript" src="js/script_min.js">
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
+<p> &nbsp </p>
 <div id="main" class="container">
     <h1 align="center"> Jake Koten's Website</h1>
       <nav role="navigation" class="navbar navbar-default">
          <ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
           <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html" id="about">About me</a></li>
+          <li><a href="/resume" id="about">About me</a></li>
           <li class="active"><a href="aboutyou.html" id="aboutyou">About you</a></li>
           <li><a href="/blog" id="websites">Blog</a></li>
           <li><a href="contact.html" id="contact">Contact</a></li>
@@ -30,7 +30,7 @@
     
       <ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
           <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html" id="about">About me</a></li>
+          <li><a href="/resume" id="about">About me</a></li>
           <li class="active" ><a href="aboutyou.html" id="aboutyou">About you</a></li>
           <li><a href="/blog" id="websites">Blog</a></li>
           <li><a href="contact.html" id="contact">Contact</a></li>
@@ -40,54 +40,59 @@
           <li><a href="websites.html" id="websites">Websites</a></li>
       </ul>
      </nav>
-<center id="go-here">
-<script type="text/javascript">
-	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Windows"){
-	document.write('<p><img src="images/win_firefox.png"/> </p>');
+<center id="go-here"> 
+  <script type="text/javascript">
+  if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Windows"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/win_firefox.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Windows"){
-	document.write('<p><img src="images/win_opera.png"/> </p>');
+  if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Windows"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/win_opera.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Windows"){
-	document.write('<p><img src="images/win_chrome.png"/> </p>');
+  if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Windows"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/win_chrome.png"/> </p>');
 }
 if (BrowserDetect.browser == "Explorer"&& BrowserDetect.OS == "Windows"){
-	document.write('<p><img src="images/win_ie.png"/> </p>');
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/win_ie.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Mac"){
-	document.write('<p><img src="images/mac_firefox.png"/> </p>');
+  if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Mac"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/mac_firefox.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Mac"){
-	document.write('<p><img src="images/mac_opera.png"/> </p>');
+  if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Mac"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/mac_opera.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Mac"){
-	document.write('<p><img src="images/mac_chrome.png"/> </p>');
+  if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Mac"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/mac_chrome.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Safari"&& BrowserDetect.OS == "Mac"){
-	document.write('<p><img src="images/mac_safari.png"/> </p>');
+  if (BrowserDetect.browser == "Safari"&& BrowserDetect.OS == "Mac"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/mac_safari.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Linux"){
-	document.write('<p><img src="images/linux_firefox.png"/> </p>');
+  if (BrowserDetect.browser == "Firefox"&& BrowserDetect.OS == "Linux"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/linux_firefox.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Linux"){
-	document.write('<p><img src="images/linux_opera.png"/> </p>');
+  if (BrowserDetect.browser == "Opera"&& BrowserDetect.OS == "Linux"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/linux_opera.png"/> </p>');
 }
-	if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Linux"){
-	document.write('<p><img src="images/linux_chrome.png"/> </p>');
+  if (BrowserDetect.browser == "Chrome"&& BrowserDetect.OS == "Linux"){
+  document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/linux_chrome.png"/> </p>');
 }
-	if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)|| navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)|| navigator.userAgent.match(/iPod/i)|| navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i))
-	{
-		document.write('<p><img src="images/else.png" class="img-responsive"/> </p>');
-	}
+  if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i)|| navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)|| navigator.userAgent.match(/iPod/i)|| navigator.userAgent.match(/BlackBerry/i)|| navigator.userAgent.match(/Windows Phone/i))
+  {
+    document.write('<p><img src="http://dlw3k56aan64k.cloudfront.net/images/else.png" class="img-responsive"/> </p>');
+  }
 </script>
-  
 </center>
+ <nav id="footer" class="navbar navbar-default"></nav> 
+    <div class="footer_text">
+    <small> Designed and built by Jake Koten</small> 
+    <br>
+    <small>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</small>
+    <br>
+    <br>
+    </div>
 </div>	
 </body>
-    <script>
-      $(window).load(function() {
-        var theHash = "#go-here";
-        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
-      });
-    </script>
+ <script src="js/custom.js"></script>
+<script typt="text/javascript" src="js/script_min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 </html>

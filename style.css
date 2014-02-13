@@ -9,6 +9,31 @@ h1 {
   padding-bottom: 20px;
 }
 
+#aboutImg {
+  margin-left: auto;
+    margin-right: auto;
+}
+
+#footer nav {
+  border-color: #f8f8f8;
+  border-radius: 0px;
+
+}
+
+.footer_text {
+   margin-right: auto;
+      margin-left: auto;
+      width: 50%;
+}
+
+.footer_text small{
+ text-align: center
+}
+
+#designed{
+  padding-left: 100px;
+}
+
 ul li { display: inline; }
 
 #main nav {

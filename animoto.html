@@ -2,23 +2,25 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-<title>Contact Jake Koten</title>
+<title>Making predictions using JavaScript</title>
+	<script typt="text/javascript" src="js/script_min.js">
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="css/style_min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <p> &nbsp </p>
 <div id="main" class="container">
-
-<h1 align="center"> Jake Koten's Website</h1>
-    <nav role="navigation" class="navbar navbar-default">
+    <h1 align="center"> Jake Koten's Website</h1>
+      <nav role="navigation" class="navbar navbar-default">
          <ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
           <li><a href="index.html">Home</a></li>
           <li><a href="/resume" id="about">About me</a></li>
           <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
           <li><a href="/blog" id="websites">Blog</a></li>
-          <li class="active"><a href="contact.html" id="contact">Contact</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
           <li><a href="films.html" id="film">Films</a></li>
           <li><a href="future.html" id="future">Future</a></li>
           <li><a href="project.html" id="projects">Projects</a></li>
@@ -31,33 +33,24 @@
           <li><a href="/resume" id="about">About me</a></li>
           <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
           <li><a href="/blog" id="websites">Blog</a></li>
-          <li class="active"><a href="contact.html" id="contact">Contact</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
           <li><a href="films.html" id="film">Films</a></li>
           <li><a href="future.html" id="future">Future</a></li>
           <li><a href="project.html" id="projects">Projects</a></li>
           <li><a href="websites.html" id="websites">Websites</a></li>
       </ul>
-     
-</nav>
+     </nav>
+</div>   
+<center id="go-here"> </center>
+
+<video video autoplay loop id="bgvid">
+  <source src="video/animo3.mp4" type="video/mp4">
+  <source src="video/animo.webm" type="video/webm">
+  Your browser does not support the <code>video</code> element.
+</video>
 
 
-<form method="POST" action="mailer.php" id="go-here">
-    <p align="center"><img src="http://dlw3k56aan64k.cloudfront.net/images/jake_dress.png" class="img-responsive"/></p>
-      <p align="center">&nbsp;</p>
-      <p align="center"><strong>...or if you want to contact me basically anonymously</strong></p>
-      <p align="center">&nbsp;</p>
-      <p align="center">
-        <input type="text" name="name" size="29" onfocus="this.select()"value="Name">
-        <br>
-        <br>
-        <input type="text" name="email" size="29" onfocus="this.select()"value="E-mail Address"><br>
-        <br>
-        <textarea rows="9" name="message" cols="30"> </textarea>
-        <br>
-        <br>
-        <input type="submit" value="Submit" name="submit" class="btn btn-default">
-      </p>
-    </form>  
+
  <nav id="footer" class="navbar navbar-default"></nav> 
     <div class="footer_text">
     <small> Designed and built by Jake Koten</small> 
@@ -68,7 +61,23 @@
     </div>
 </div>	
 </body>
-<script typt="text/javascript" src="js/script_min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/custom.js"></script>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8550088-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+    <script>
+      $(window).load(function() {
+        var theHash = "#go-here";
+        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
+      });
+    </script>
 </html>

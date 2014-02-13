@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+	<title>About good ol' Jake</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/style_min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	 <p> &nbsp </p>
+	<div id="main" class="container">
+		<h1 align="center"> Jake Koten's Website</h1>
+		<nav role="navigation" class="navbar navbar-default">
+			<ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="aboutme.html" id="about">About me</a></li>
+				<li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+				<li><a href="/blog" id="websites">Blog</a></li>
+				<li><a href="contact.html" id="contact">Contact</a></li>
+				<li><a href="films.html" id="film">Films</a></li>
+				<li><a href="future.html" id="future">Future</a></li>
+				<li><a href="project.html" id="projects">Projects</a></li>
+				<li><a href="websites.html" id="websites">Websites</a></li>
+			</ul>
+
+			
+			<ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="aboutme.html" id="about">About me</a></li>
+				<li><a href="aboutyou.html" id="aboutyou">About you</a></li>
+				<li><a href="/blog" id="websites">Blog</a></li>
+				<li><a href="contact.html" id="contact">Contact</a></li>
+				<li><a href="films.html" id="film">Films</a></li>
+				<li><a href="future.html" id="future">Future</a></li>
+				<li><a href="project.html" id="projects">Projects</a></li>
+				<li><a href="websites.html" id="websites">Websites</a></li>
+			</ul>
+		</nav>
+		<div id="go-here" class="row aboutme">
+        <div class="col-md-6 col-lg-4 me_space">
+        	<p><img src="images/Jake_a_lope.png"/> </p>
+        	<a href="aboutme_agian.html"> <span class="span_button"></span></a>
+        </div>
+        <div class="col-md-6 col-lg-4 me_space">
+			<p><img src="images/work_his.png" /> </p>
+        	 <a href="history.html"> <span class="span_button"></span></a>
+        </div>
+        <div class="col-md-6 col-lg-4 me_space">
+      		<p><img src="images/testimonials.png" /> </p>
+
+        	 <a href="testimonials.html"> <span class="span_button"></span></a>
+        </div>
+         <div class="col-md-6 col-lg-4 me_space">
+         <p><img src="images/skills.png" /> </p>
+        <a href="skills.html"> <span class="span_button"></span></a>
+        </div>
+
+        <div class="col-md-6 col-lg-4 me_space">
+         <p><img src="images/github.png" /> </p>
+        	<a href="http://github.com/kotentie"> <span class="span_button"></span></a>
+
+        </div>
+        <div class="col-md-6 col-lg-4 me_space">
+         <p><img src="images/work.png" /> </p>
+        <a href="work.html"> <span class="span_button"></span></a>
+        </div>
+      </div>
+	 <nav id="footer" class="navbar navbar-default"></nav> 
+    <div class="footer_text">
+    <small> Designed and built by Jake Koten</small> 
+    <br>
+    <small>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</small>
+    <br>
+    <br>
+    </div>
+    </div>		
+</body>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8550088-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+ <script>
+      $(window).load(function() {
+        var theHash = "#go-here";
+        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
+      });
+    </script>
+</html>

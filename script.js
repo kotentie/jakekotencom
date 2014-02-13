@@ -21,7 +21,7 @@ function setupRollover(thisLink,thisImage) {
 	thisLink.outImage.src = thisImage.src;
 
 	thisLink.overImage = new Image();
-	thisLink.overImage.src = "images/" + thisLink.id + "_on.gif";
+	thisLink.overImage.src = "http://dlw3k56aan64k.cloudfront.net/images/" + thisLink.id + "_on.gif";
 }
 
 function rollOut() {

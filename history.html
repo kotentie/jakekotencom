@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 	<title>The Future of Jake Koten</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link type="text/css" rel="stylesheet" href="style.css">
+	<link href="css/style_min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -14,12 +15,12 @@
 		<nav role="navigation" class="navbar navbar-default">
 			<ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="/resume" id="about">About me</a></li>
+				<li><a href="aboutme.html" id="about">About me</a></li>
 				<li><a href="aboutyou.html" id="aboutyou">About you</a></li>
 				<li><a href="/blog" id="websites">Blog</a></li>
 				<li><a href="contact.html" id="contact">Contact</a></li>
 				<li><a href="films.html" id="film">Films</a></li>
-				<li class="active"><a href="future.html" id="future">Future</a></li>
+				<li><a href="future.html" id="future">Future</a></li>
 				<li><a href="project.html" id="projects">Projects</a></li>
 				<li><a href="websites.html" id="websites">Websites</a></li>
 			</ul>
@@ -27,21 +28,19 @@
 			
 			<ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="/resume" id="about">About me</a></li>
+				<li><a href="aboutme.html" id="about">About me</a></li>
 				<li><a href="aboutyou.html" id="aboutyou">About you</a></li>
 				<li><a href="/blog" id="websites">Blog</a></li>
 				<li><a href="contact.html" id="contact">Contact</a></li>
 				<li><a href="films.html" id="film">Films</a></li>
-				<li class="active"><a href="future.html" id="future">Future</a></li>
+				<li><a href="future.html" id="future">Future</a></li>
 				<li><a href="project.html" id="projects">Projects</a></li>
 				<li><a href="websites.html" id="websites">Websites</a></li>
 			</ul>
 		</nav>
-		<div align="center">
-			<p>&nbsp;</p>
-			<img src="http://dlw3k56aan64k.cloudfront.net/images/under_construction.png" height="600" id="go-here"/>
-			<p>&nbsp;</p>
-		</div>
+		<div id="go-here">
+	<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AhYg5eX0St06dFhMUXV0bGNGS0ktWEp6bGloWVJGYWc&font=PTSerif-PTSans&maptype=TERRAIN&lang=en&gmap_key=AIzaSyAxNRq45yo4t7qq3ZMMS6-BdxpGwmUQ2qg&height=650' width='100%' height='650' frameborder='0' class="iframe"></iframe>
+	</div>
 	 <nav id="footer" class="navbar navbar-default"></nav> 
     <div class="footer_text">
     <small> Designed and built by Jake Koten</small> 
@@ -52,6 +51,23 @@
     </div>
     </div>	
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
- <script src="js/custom.js"></script>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8550088-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+ <script>
+      $(window).load(function() {
+        var theHash = "#go-here";
+        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
+      });
+    </script>
 </html>

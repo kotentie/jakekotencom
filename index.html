@@ -2,22 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>JakeKoten.com</title>
-	<script type="text/javascript" src="script.js"></script>
-	<link rel="stylesheet" rev="stylesheet" href="styles.css" />
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-
- 
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
+  <p> &nbsp </p>
   <div id="main" class="container">
     <h1 align="center"> Jake Koten's Website</h1>
         <nav role="navigation" class="navbar navbar-default">
       <ul id="menu" class="nav nav-pills nav-stacked hidden-lg">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html" id="about">About me</a></li>
+        <li><a href="/resume" id="about">About me</a></li>
         <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
         <li><a href="/blog" id="websites">Blog</a></li>
         <li><a href="contact.html" id="contact">Contact</a></li>
@@ -30,7 +26,7 @@
       
       <ul id="menu" class="nav navbar-nav hidden-md hidden-sm hidden-xs">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html" id="about">About me</a></li>
+        <li><a href="/resume" id="about">About me</a></li>
         <li><a href="aboutyou.html" id="aboutyou">About you</a></li>
         <li><a href="/blog" id="websites">Blog</a></li>
         <li><a href="contact.html" id="contact">Contact</a></li>
@@ -42,30 +38,21 @@
       
     </nav>
     <div id="go-here">
-   <img src="images/intro.gif" alt="arrow" id="aboutImg" class="img-responsive" alt="Responsive image"/>
+   <img src="http://dlw3k56aan64k.cloudfront.net/images/intro.gif" alt="arrow" id="aboutImg" class="img-responsive" alt="Responsive image"/>
     <p align="center" class="hidden-xs hidden-sm hidden-md">*the above animations may only be hilarious. If the condition persists please consult your doctor.<p>
       <p>&nbsp;</p>
     </div>
-    <footer class="panel-footer">wow</footer>  
+    <nav id="footer" class="navbar navbar-default"></nav> 
+    <div class="footer_text">
+    <small id="designed"> Designed and built by Jake Koten</small> 
+    <br>
+    <small>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</small>
+    <br>
+    <br>
+    </div>
     </div>
   </body>
-   <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-8550088-5']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-  </script>
-   <script>
-      $(window).load(function() {
-        var theHash = "#go-here";
-        $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
-      });
-    </script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/script_min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   </html>
