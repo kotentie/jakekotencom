@@ -13,5 +13,6 @@
   $(window).load(function() {
     var theHash = "#go-here";
     $("html, body").animate({scrollTop:$(theHash).offset().top}, 800);
-});
-    
+  });
+  
+
